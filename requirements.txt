@@ -1,0 +1,15 @@
+# Core runtime dependencies. For editable/dev installs prefer:
+#   pip install -e ".[dev]"
+# This file exists for environments that expect a requirements.txt.
+
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.29,<1.0
+pydantic>=2.6,<3.0
+pydantic-settings>=2.2,<3.0
+httpx>=0.27,<1.0
+
+# Development / testing (optional)
+pytest>=8.0
+pytest-asyncio>=0.23
+ruff>=0.4
+mypy>=1.9
